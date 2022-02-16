@@ -1,0 +1,57 @@
+.about-container{
+    position: absolute;
+    width: 850px;
+    height: 500px;
+    top: 100px;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.384);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.aboutp{
+    color: white;
+}
+
+.earth{
+    background-color: rgb(0, 174, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: solid rgb(54, 126, 235);
+    top: 400px;
+    position: absolute;
+    animation-name: earth;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.earth::after{
+    content: "";
+    width: 50px;
+    height: 20px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    border-radius: 100px;
+
+}
+.earth::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    border-radius: 100px;
+
+}
+
+@keyframes earth{
+    0%{transform: translate(0,0px);}
+    50%{transform: translate(0,15px);}
+    100%{transform: translate(0,-0px);}
+}
