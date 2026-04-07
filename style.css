@@ -1,3 +1,10 @@
+:root {
+  --primary: #4e4efb;
+  --primary-h1: white;
+  --secondary: #3d3dc2;
+  --shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -9,7 +16,6 @@ body {
   padding: 5px;
   margin: 0;
   padding: 0;
-  background-color: darkslategrey;
 }
 
 * {
@@ -26,15 +32,18 @@ footer {
 
 header {
   grid-area: header;
-  background-color: greenyellow;
+  background-color: var(--primary);
+  color: var(--primary-h1);
+  text-align: center;
 }
 
 nav {
   grid-area: nav;
-  background-color: green;
+  background-color: var(--secondary);
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  box-shadow: var(--shadow);
 }
 
 nav a {
@@ -54,7 +63,7 @@ nav a:hover {
 
 aside {
   grid-area: aside;
-  background-color: forestgreen;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -65,7 +74,6 @@ p {
 
 main {
   grid-area: main;
-  color: white;
 }
 
 main section {
@@ -75,9 +83,10 @@ main section {
 
 footer {
   grid-area: footer;
-  background-color: darkgreen;
+  background-color: var(--secondary);
   font-size: large;
   color: white;
+  text-align: center;
 }
 
 figure > img {
