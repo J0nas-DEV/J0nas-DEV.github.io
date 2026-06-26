@@ -1,285 +1,211 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>j0nas-DEV Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header id="top-header">
+      <nav id="top-nav">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact-details">Contact Details</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section" aria-labelledby="about-heading">
+        <figure id="hero-figure">
+          <img id="hero-image" src="assets/img/me.jpg" alt="me" />
+          <figcaption>j0nas-DEV my <strong>GITHUB ACC.</strong></figcaption>
+        </figure>
+        <article id="about">
+          <hgroup>
+            <h1 id="about-heading">My <strong>Portfolio</strong> By j0nas-DEV</h1>
+            <p>Fullstack Developer, Game Developer</p>
+          </hgroup>
+          <details open>
+            <summary>
+              A <strong>Versitile</strong> Developer
+            </summary>
+            <p>
+              I’m a self-taught programmer and coder with a strong passion for
+              building applications and bringing ideas to life through code. I
+              enjoy learning new technologies, solving problems, and
+              continuously improving my skills by creating personal projects and
+              experimenting with different tools and programming languages.
+            </p>
+          </details>
+          <button>Contact me</button>
+        </article>
+      </section>
+      <hr />
+      <section id="skills-tree">
+        <header class="section-heading">
+          <h3><strong>Growth path</strong></h3>
+          <h2>SKILLS TREE</h2>
+          <p>
+            The stack branches from my core build habits into the tools and
+            languages I use most.
+          </p>
+        </header>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>J0nas-DEV PORTFOLIO</title>
-    <meta name="keywords" content="J0nas-DEV, J0nas-DEV portfolio">
-    <meta name="description" content="this is my portfolio">
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "J0nas-DEV PORTFOLIO",
-            "url": "https://j0nas-dev.github.io/"
-        }
-    </script>
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg">
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg">
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg">
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg">
-    <link rel="icon" type="image/svg+xml" sizes="308x308" href="assets/img/logo.svg">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-icons.css">
-</head>
+        <section class="skill-tree" aria-label="Skill progression tree">
+          <article class="skill-root">
+            <img src="assets/img/me.jpg" alt="j0nas-DEV portrait" />
+            <div>
+              <h3>Core Builder</h3>
+              <p>
+                Self-taught fullstack and game dev, focused on shipping ideas
+                and leveling up with every project.
+              </p>
+            </div>
+          </article>
 
-<body class="bg-warning-subtle" style="font-family: 'Pixelify Sans', serif;background: rgb(255, 243, 205);">
-    <nav class="navbar navbar-expand-md bg-warning py-3">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-lg d-flex justify-content-center align-items-center me-2 bs-icon" style="text-shadow: 0px 0px 13px rgba(0,0,0,0.45);">😎</span><span class="fs-3 fw-semibold">J0nas-DEV</span></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-3">
-                <ul class="navbar-nav gap-3 ms-5">
-                    <li class="nav-item"><a class="nav-link active fs-3 fw-semibold" href="#">Background</a></li>
-                    <li class="nav-item fs-3 fw-semibold"><a class="nav-link fs-3 fw-semibold" href="#skills">Skills</a></li>
-                    <li class="nav-item fs-3 fw-semibold"><a class="nav-link fs-3 fw-semibold" href="#experience">Experience</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section>
-        <div class="container py-4 py-xl-5">
-            <div class="row gy-4 gy-md-0">
-                <div class="col-md-6 d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center pb-2">
-                    <div class="row g-0 row-cols-1 bg-primary-subtle rounded-4 p-4">
-                        <div class="col">
-                            <h1 class="fs-1 fw-bolder lh-1" style="text-align: center;"><strong><span style="color: rgb(0, 0, 0);">👋 Hi There, </span></strong><br><strong><span style="color: rgb(0, 0, 0);">I'm J0nas-DEV</span></strong></h1>
-                        </div>
-                        <div class="col">
-                            <p class="fs-5 my-3" style="text-align: center;"><br>I’m a self-taught programmer and coder with a strong passion for building applications and bringing ideas to life through code. I enjoy learning new technologies, solving problems, and continuously improving my skills by creating personal projects and experimenting with different tools and programming languages.<br><br></p>
-                            <hr>
-                        </div>
-                        <div class="col"><sub class="text-uppercase fs-5 text-secondary-emphasis" id="time">date time now</sub></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="m-xl-5 p-xl-5"><img class="img-fluid object-fit-contain border rounded-circle border-0 w-100 overflow-hidden" style="min-height: 300px;" src="assets/img/logo.svg"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container py-4 py-xl-5" id="skills">
-        <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h1 class="fs-1 fw-semibold">Hard Skills</h1>
-            </div>
-        </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Programming &amp; Development</h4>
-                        <p class="fs-5">Skilled in building applications, writing clean code, and developing practical software solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Computer Literate</h4>
-                        <p class="fs-5">Proficient in using computer systems, software applications, and digital tools efficiently.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Software Architecture &amp; Design</h4>
-                        <p class="fs-5">Designing scalable, secure, and maintainable software solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">UX Design</h4>
-                        <p class="fs-5">Creating intuitive, user-centered, and engaging digital experiences.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Video &amp; Photo Editing</h4>
-                        <p class="fs-5">for video editing I use Capcut, kdenlive and adobe after effects and for photo editing i use photoshop, photopea, gimp, canva</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">A Bit-Artistic</h4>
-                        <p class="fs-5">Blending creativity and design to craft visually engaging ideas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container py-4 py-xl-5" id="skills-1">
-        <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h1 class="fs-1 fw-semibold">Soft Skills</h1>
-            </div>
-        </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Adaptibility</h4>
-                        <p class="fs-5">Quickly adjusting to change and learning new tools and challenges.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Problem Solving</h4>
-                        <p class="fs-5">Analyzing challenges and developing effective solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Communication</h4>
-                        <p class="fs-5">Conveying ideas clearly and collaborating effectively.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Team Work</h4>
-                        <p class="fs-5">Collaborating effectively to achieve shared goals.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Cooking</h4>
-                        <p class="fs-5">Preparing meals with creativity, care, and attention to detail.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex">
-                    <div class="px-3">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">Housekeeping</h4>
-                        <p class="fs-5">Maintaining clean, organized, and well-managed spaces.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container py-4 py-xl-5">
-        <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h1 class="fs-1 fw-semibold">PROGRAMMING LANGUAGES <br>I KNOW</h1>
-            </div>
-        </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-2">
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="img-fluid object-fit-contain rounded d-block w-100" style="height: 200px;" src="assets/img/javascript.svg"></div>
-                    <div class="px-lg-4 py-4 py-lg-0">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">JAVASCRIPT</h4>
-                        <p class="fs-5">Proficient in JavaScript for building interactive, dynamic web applications, with solid understanding of core concepts like DOM manipulation, asynchronous programming, and modern ES6+ features.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="img-fluid object-fit-contain rounded d-block w-100" style="height: 200px;" src="assets/img/typescript.svg"></div>
-                    <div class="px-lg-4 py-4 py-lg-0">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">TYPESCRIPT</h4>
-                        <p class="fs-5">Proficient in TypeScript for building scalable and maintainable applications, with strong understanding of static typing, interfaces, and modern JavaScript features.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="img-fluid object-fit-contain rounded d-block w-100" style="height: 200px;" src="assets/img/python.svg"></div>
-                    <div class="px-lg-4 py-4 py-lg-0">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">PYTHON</h4>
-                        <p class="fs-5">Proficient in Python for developing efficient scripts and applications, with strong knowledge of core concepts, data structures, and problem-solving.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="img-fluid object-fit-contain rounded d-block w-100" style="height: 200px;" src="assets/img/dotnet.svg"></div>
-                    <div class="px-lg-4 py-4 py-lg-0">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">VISUAL BASIC .NET</h4>
-                        <p class="fs-5">Proficient in VB.NET for building Windows applications, with solid understanding of object-oriented programming, event-driven design, and .NET framework fundamentals.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="img-fluid object-fit-contain rounded d-block w-100" style="height: 200px;" src="assets/img/godot.svg"></div>
-                    <div class="px-lg-4 py-4 py-lg-0">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">GDSCRIPT (GODOT)</h4>
-                        <p class="fs-5">Proficient in GDScript for creating games in Godot, with strong understanding of scripting gameplay logic, scene management, and node-based architecture.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="img-fluid object-fit-contain rounded d-block w-100" style="height: 200px;" src="assets/img/lua.svg"></div>
-                    <div class="px-lg-4 py-4 py-lg-0">
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">LUA</h4>
-                        <p class="fs-5">Basic knowledge of Lua with experience creating simple prototype games using Roblox Studio and Defold, including foundational understanding of scripting, game logic, and event-driven programming.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container py-4 py-xl-5" id="experience">
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col"><img class="object-fit-cover rounded-5 shadow w-100 h-100" style="min-height: 300px;" src="assets/img/me.jpg"></div>
-            <div class="col d-flex flex-column justify-content-center align-self-start p-4">
-                <div class="d-flex flex-row justify-content-center align-items-center align-content-center align-items-md-start mb-5">
-                    <div>
-                        <h1 class="fs-1 fw-semibold">MY EXPERIENCE</h1>
-                    </div>
-                </div>
-                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
-                    <div>
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">LCR - JUNIOR SOFTWARE DEVELOPER</h4>
-                        <p class="fs-5">Developed and maintained Windows applications using VB.NET, focusing on implementing features, fixing bugs, and improving system functionality while working with the team to deliver reliable and user-friendly software.</p>
-                    </div>
-                </div>
-                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
-                    <div>
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">DEVELOP A HOTEL ROOM MONITORING - SYSTEM FOR EMJAKE</h4>
-                        <p class="fs-5">Developed EMJAKE HOTEL Room Monitoring System&nbsp;in Godot Engine&nbsp;using GDScript, featuring room status tracking, occupancy monitoring, maintenance record management, customer information logging, and an admin dashboard for managing hotel room operations.</p>
-                    </div>
-                </div>
-                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
-                    <div>
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">PRINTING PRESS CHANTONG - ASSIST</h4>
-                        <p class="fs-5">Assisted in day-to-day printing press operations, including preparing materials, organizing prints, and supporting workflow processes, ensuring smooth production and efficient task completion.</p>
-                    </div>
-                </div>
-                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start">
-                    <div>
-                        <h4 class="fs-3 fw-semibold text-decoration-underline">PROGRAMMER - FREELANCER</h4>
-                        <p class="fs-5">Developed software and small projects using JavaScript, Python, VB.NET, and TypeScript, focusing on building functional applications, solving problems, and improving coding skills through real-world tasks.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="text-center bg-warning" data-bs-theme="light">
-        <div class="container py-4 py-lg-5"><a class="fs-3 fw-semibold" href="#"><br><span style="color: rgba(0, 0, 0, 0.75);">jonasdalig@gmail.com</span></a>
-            <p class="fs-4 text-body mb-0">portfolio 2026</p>
-        </div>
+          <section class="skill-branches" aria-label="Skill branches">
+            <article class="skill-card">
+              <p class="skill-card__index">01</p>
+              <h3>Languages</h3>
+              <ul class="skill-tags">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PYTHON</li>
+                <li>VB.NET</li>
+                <li>C#</li>
+                <li>GDSCRIPT</li>
+              </ul>
+              <div class="skill-meter" aria-hidden="true">
+                <span style="width: 95%"></span>
+              </div>
+              <p class="skill-note">Primary stack for interfaces and app logic.</p>
+            </article>
+
+            <article class="skill-card">
+              <p class="skill-card__index">02</p>
+              <h3>Frontend</h3>
+              <ul class="skill-tags">
+                <li>Responsive UI</li>
+                <li>Accessibility</li>
+                <li>Animation</li>
+                <li>Component thinking</li>
+              </ul>
+              <div class="skill-meter" aria-hidden="true">
+                <span style="width: 88%"></span>
+              </div>
+              <p class="skill-note">Designing clean, readable experiences that scale.</p>
+            </article>
+
+            <article class="skill-card">
+              <p class="skill-card__index">03</p>
+              <h3>Backend</h3>
+              <ul class="skill-tags">
+                <li>Node.js</li>
+                <li>APIs</li>
+                <li>Data flow</li>
+                <li>Problem solving</li>
+              </ul>
+              <div class="skill-meter" aria-hidden="true">
+                <span style="width: 80%"></span>
+              </div>
+              <p class="skill-note">Building the logic that keeps projects running.</p>
+            </article>
+
+            <article class="skill-card skill-card--accent">
+              <p class="skill-card__index">04</p>
+              <h3>Always leveling up</h3>
+              <ul class="skill-tags">
+                <li>Game dev</li>
+                <li>Portfolio builds</li>
+                <li>Experimentation</li>
+                <li>New tooling</li>
+              </ul>
+              <div class="skill-meter" aria-hidden="true">
+                <span style="width: 72%"></span>
+              </div>
+              <p class="skill-note">Every branch is a place to test something new.</p>
+            </article>
+          </section>
+        </section>
+      </section>
+      <hr />
+      <section id="faq">
+        <header class="faq-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Quick answers about how I build, learn, and ship projects.
+          </p>
+        </header>
+
+        <section class="faq-grid" aria-label="Frequently asked questions list">
+          <details class="faq-item" open>
+            <summary>What kind of projects do you usually build?</summary>
+            <p>
+              Mostly web apps, tools, and game-related experiments where I can
+              practice fullstack thinking from UI to logic.
+            </p>
+          </details>
+
+          <details class="faq-item" open>
+            <summary>What technologies are you most confident with?</summary>
+            <p>
+              JavaScript, TypeScript, HTML, CSS, and Node.js are my strongest
+              daily tools, and I keep expanding from there.
+            </p>
+          </details>
+
+          <details class="faq-item" open>
+            <summary>How do you keep improving your skills?</summary>
+            <p>
+              I learn by building real projects, breaking things, fixing them,
+              and reviewing what can be improved in the next version.
+            </p>
+          </details>
+
+          <details class="faq-item" open>
+            <summary>Are you open to collaboration?</summary>
+            <p>
+              Yes. I am open to creative ideas, portfolio collaborations, and
+              development projects where I can contribute and grow.
+            </p>
+          </details>
+        </section>
+      </section>
+    </main>
+    <footer id="contact-details">
+      <address>
+      <ul>
+        <li>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect with us on LinkedIn"
+            class="hover:underline"
+            ><i class="bi bi-google"></i> jonasdalig@gmail.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect with us on LinkedIn"
+            class="hover:underline"
+            ><i class="bi bi-github"></i> j0nas-DEV</a
+          >
+        </li>
+      </ul>
+      </address>
+      <small> &copy;2026 portfolio. All rights reserved. </small>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
