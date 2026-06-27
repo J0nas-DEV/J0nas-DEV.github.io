@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>j0nas-DEV Portfolio</title>
-    <meta name="keywords" content="J0nas-DEV, J0nas-DEV portfolio">
-    <meta name="description" content="this is my portfolio">
+    <meta name="keywords" content="J0nas-DEV, J0nas-DEV portfolio" />
+    <meta name="description" content="this is my portfolio" />
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "J0nas-DEV PORTFOLIO",
-            "url": "https://j0nas-dev.github.io/"
-        }
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "J0nas-DEV PORTFOLIO",
+        "url": "https://j0nas-dev.github.io/"
+      }
     </script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header id="top-header">
@@ -39,11 +39,13 @@
         </figure>
         <article id="hero-about">
           <hgroup>
-            <h1 id="about-heading">My <strong>Portfolio</strong> By j0nas-DEV</h1>
+            <h1 id="about-heading">
+              My <strong>Portfolio</strong> By j0nas-DEV
+            </h1>
             <p>Fullstack Developer, Game Developer, Multimedia Designer</p>
           </hgroup>
           <details open>
-            <summary onclick="return false">
+            <summary onclick="return false;">
               A <strong>Versitile</strong> Developer
             </summary>
             <p>
@@ -54,7 +56,9 @@
               experimenting with different tools and programming languages.
             </p>
           </details>
-          <button command="show-modal" commandfor="my-dialog">Contact me</button>
+          <button command="show-modal" commandfor="my-dialog">
+            Contact me
+          </button>
         </article>
       </section>
       <hr />
@@ -97,7 +101,9 @@
               <div class="skill-meter" aria-hidden="true">
                 <span style="width: 95%"></span>
               </div>
-              <p class="skill-note">Primary stack for interfaces and app logic.</p>
+              <p class="skill-note">
+                Primary stack for interfaces and app logic.
+              </p>
             </article>
 
             <article class="skill-card">
@@ -112,7 +118,9 @@
               <div class="skill-meter" aria-hidden="true">
                 <span style="width: 88%"></span>
               </div>
-              <p class="skill-note">Designing clean, readable experiences that scale.</p>
+              <p class="skill-note">
+                Designing clean, readable experiences that scale.
+              </p>
             </article>
 
             <article class="skill-card">
@@ -127,7 +135,9 @@
               <div class="skill-meter" aria-hidden="true">
                 <span style="width: 80%"></span>
               </div>
-              <p class="skill-note">Building the logic that keeps projects running.</p>
+              <p class="skill-note">
+                Building the logic that keeps projects running.
+              </p>
             </article>
 
             <article class="skill-card">
@@ -142,7 +152,9 @@
               <div class="skill-meter" aria-hidden="true">
                 <span style="width: 70%"></span>
               </div>
-              <p class="skill-note">Blending visuals, motion, and interface polish into one flow.</p>
+              <p class="skill-note">
+                Blending visuals, motion, and interface polish into one flow.
+              </p>
             </article>
 
             <article class="skill-card skill-card--accent">
@@ -157,10 +169,10 @@
               <div class="skill-meter" aria-hidden="true">
                 <span style="width: 72%"></span>
               </div>
-              <p class="skill-note">Every branch is a place to test something new.</p>
+              <p class="skill-note">
+                Every branch is a place to test something new.
+              </p>
             </article>
-
-            
           </section>
         </section>
       </section>
@@ -168,9 +180,7 @@
       <section id="faq">
         <header class="faq-header">
           <h2>Frequently Asked Questions</h2>
-          <p>
-            Quick answers about how I build, learn, and ship projects.
-          </p>
+          <p>Quick answers about how I build, learn, and ship projects.</p>
         </header>
 
         <section class="faq-grid" aria-label="Frequently asked questions list">
@@ -207,31 +217,47 @@
           </details>
         </section>
       </section>
+      <details id="floating-button">
+        <summary>
+          <i class="bi bi-universal-access"></i>
+          Accessibility
+        </summary>
+        <ul>
+          <li>
+            <button type="button" onclick="setFont()">
+              <i class="bi bi-type"></i>Readable/Pixel Font
+            </button>
+          </li>
+          <li><button type="button" onclick="setGrayscale()"><i class="bi bi-eye-fill"></i>Grayscale</button></li>
+          <!-- <li><button type="button"><i class="bi bi-thermometer-sun"></i>High Contrast</button></li>
+          <li><button type="button"><i class="bi bi-arrow-90deg-left"></i>Reset</button></li> -->
+        </ul>
+      </details>
     </main>
     <footer id="contact-details">
       <address>
-      <ul>
-        <li>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Connect with us on LinkedIn"
-            class="hover:underline"
-            ><i class="bi bi-google"></i> jonasdalig@gmail.com</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Connect with us on LinkedIn"
-            class="hover:underline"
-            ><i class="bi bi-github"></i> j0nas-DEV</a
-          >
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect with us on LinkedIn"
+              class="hover:underline"
+              ><i class="bi bi-google"></i> jonasdalig@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect with us on LinkedIn"
+              class="hover:underline"
+              ><i class="bi bi-github"></i> j0nas-DEV</a
+            >
+          </li>
+        </ul>
       </address>
       <small> &copy;2026 portfolio. All rights reserved. </small>
     </footer>
@@ -240,9 +266,10 @@
         <header class="dialog-header">
           <div>
             <p class="dialog-kicker">Contact</p>
-            <h2 id="contact-dialog-title">Let’s build something useful and level up!</h2>
+            <h2 id="contact-dialog-title">
+              Let’s build something useful and level up!
+            </h2>
           </div>
-          
         </header>
 
         <p class="dialog-summary">
@@ -274,12 +301,52 @@
               the easiest place to follow what I’m building next.
             </p>
           </details>
-          
-        <button class="dialog-close" commandfor="my-dialog" command="close" aria-label="Close dialog">
+
+          <button
+            class="dialog-close"
+            commandfor="my-dialog"
+            command="close"
+            aria-label="Close dialog"
+          >
             CLOSE DIALOG!
           </button>
         </section>
       </div>
     </dialog>
   </body>
+  <script>
+    function setFont() {
+      var font_existing =
+        document.documentElement.style.getPropertyValue("--font");
+      switch (font_existing) {
+        case '"Inter", sans-serif':
+          document.documentElement.style.setProperty(
+            "--font",
+            '"Pixelify Sans", sans-serif',
+          );
+          break;
+        default:
+          document.documentElement.style.setProperty(
+            "--font",
+            '"Inter", sans-serif',
+          );
+          break;
+      }
+    }
+
+    function setGrayscale() {
+      switch (document.documentElement.style.getPropertyValue("filter")) {
+        case 'grayscale(100%)':
+          document.documentElement.style.filter = "none";
+          break;
+        default:
+          document.documentElement.style.filter = "grayscale(100%)";
+          break;
+      }
+    }
+
+    function setHighContrast() {}
+
+    function reset() {}
+  </script>
 </html>

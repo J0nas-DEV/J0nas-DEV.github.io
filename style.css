@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --pixel-font: "Pixelify Sans", sans-serif;
+  --font: "Pixelify Sans", sans-serif;
   --ink: #0d1321;
   --panel: #233d4d;
   --accent: #fe7f2d;
@@ -10,7 +11,7 @@
 }
 
 * {
-  font-family: var(--pixel-font);
+  font-family: var(--font);
   box-sizing: border-box;
 }
 
@@ -95,7 +96,7 @@ figcaption {
   border-top: var(--accent) 15px solid;
   border-bottom: var(--accent) 5px dashed;
   background-color: rgba(255, 255, 255, 0.56);
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(10px);
 }
 
@@ -519,6 +520,81 @@ dialog#my-dialog::backdrop {
   line-height: 1.6;
 }
 
+#floating-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#floating-button summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 16px 32px rgba(13, 19, 33, 0.16);
+  list-style: none;
+  user-select: none;
+  backdrop-filter: blur(5px);
+}
+
+#floating-button i {
+  margin-right: 10px;
+  -webkit-text-stroke: 0.5px;
+}
+
+#floating-button button {
+  font-size: larger !important;
+}
+
+#floating-button summary::-webkit-details-marker {
+  display: none;
+}
+
+#floating-button ul {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 0.75rem);
+  width: max-content;
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0.85rem;
+  list-style: none;
+  border: 1px solid rgba(35, 61, 77, 0.16);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 22px 40px rgba(13, 19, 33, 0.16);
+}
+
+#floating-button:not([open]) ul {
+  display: none;
+}
+
+#floating-button ul button {
+  width: 100%;
+  white-space: nowrap;
+  font-size: 1rem;
+  text-align: left;
+}
+
+#floating-button summary:hover,
+#floating-button summary:focus-visible {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+#floating-button summary:focus-visible {
+  outline: 3px solid rgba(13, 19, 33, 0.35);
+  outline-offset: 3px;
+}
+
 @media screen and (min-width: 769px) {
   .skill-tree::before {
   top: 120px;
@@ -551,6 +627,17 @@ dialog#my-dialog::backdrop {
   grid-template-columns: 1fr;
   text-align: center;
   justify-items: center;
+  }
+
+  #floating-button {
+  right: 0.75rem;
+  bottom: 0.75rem;
+  }
+
+  #floating-button ul {
+  right: 0;
+  left: auto;
+  width: min(92vw, 20rem);
   }
 
 }
