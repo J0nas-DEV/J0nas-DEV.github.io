@@ -319,7 +319,7 @@ footer small {
   margin: 0 0 0.4rem;
   color: var(--accent);
   letter-spacing: 0.22em;
-  font-size: 0.9rem;
+  font-size: large;
 }
 
 .skill-tags {
