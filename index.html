@@ -14,7 +14,7 @@
     <header id="top-header">
       <nav id="top-nav">
         <ul>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#hero-about">About Me</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact-details">Contact Details</a></li>
         </ul>
@@ -26,13 +26,13 @@
           <img id="hero-image" src="assets/img/me.jpg" alt="me" />
           <figcaption>j0nas-DEV my <strong>GITHUB ACC.</strong></figcaption>
         </figure>
-        <article id="about">
+        <article id="hero-about">
           <hgroup>
             <h1 id="about-heading">My <strong>Portfolio</strong> By j0nas-DEV</h1>
-            <p>Fullstack Developer, Game Developer</p>
+            <p>Fullstack Developer, Game Developer, Multimedia Designer</p>
           </hgroup>
           <details open>
-            <summary>
+            <summary onclick="return false">
               A <strong>Versitile</strong> Developer
             </summary>
             <p>
@@ -43,7 +43,7 @@
               experimenting with different tools and programming languages.
             </p>
           </details>
-          <button>Contact me</button>
+          <button command="show-modal" commandfor="my-dialog">Contact me</button>
         </article>
       </section>
       <hr />
@@ -119,8 +119,23 @@
               <p class="skill-note">Building the logic that keeps projects running.</p>
             </article>
 
-            <article class="skill-card skill-card--accent">
+            <article class="skill-card">
               <p class="skill-card__index">04</p>
+              <h3>Multimedia Designer</h3>
+              <ul class="skill-tags">
+                <li>Motion graphics</li>
+                <li>Video editing</li>
+                <li>Visual storytelling</li>
+                <li>UI assets</li>
+              </ul>
+              <div class="skill-meter" aria-hidden="true">
+                <span style="width: 70%"></span>
+              </div>
+              <p class="skill-note">Blending visuals, motion, and interface polish into one flow.</p>
+            </article>
+
+            <article class="skill-card skill-card--accent">
+              <p class="skill-card__index">05</p>
               <h3>Always leveling up</h3>
               <ul class="skill-tags">
                 <li>Game dev</li>
@@ -133,6 +148,8 @@
               </div>
               <p class="skill-note">Every branch is a place to test something new.</p>
             </article>
+
+            
           </section>
         </section>
       </section>
@@ -207,5 +224,51 @@
       </address>
       <small> &copy;2026 portfolio. All rights reserved. </small>
     </footer>
+    <dialog id="my-dialog">
+      <div class="dialog-shell">
+        <header class="dialog-header">
+          <div>
+            <p class="dialog-kicker">Contact</p>
+            <h2 id="contact-dialog-title">Let’s build something useful and level up!</h2>
+          </div>
+          
+        </header>
+
+        <p class="dialog-summary">
+          I’m open to portfolio collaborations, small web apps, and game-related
+          experiments. Send a message if you want a focused build partner.
+        </p>
+
+        <section class="dialog-details" aria-labelledby="contact-dialog-title">
+          <details open>
+            <summary>What I can help with</summary>
+            <p>
+              Frontend interfaces, fullstack prototypes, portfolio refreshes,
+              and creative coding experiments.
+            </p>
+          </details>
+
+          <details>
+            <summary>How I usually work</summary>
+            <p>
+              I prefer clear goals, quick iterations, and compact feedback so
+              ideas can move from concept to working build without friction.
+            </p>
+          </details>
+
+          <details>
+            <summary>Best way to reach me</summary>
+            <p>
+              Email is the fastest route for new project ideas, and GitHub is
+              the easiest place to follow what I’m building next.
+            </p>
+          </details>
+          
+        <button class="dialog-close" commandfor="my-dialog" command="close" aria-label="Close dialog">
+            CLOSE DIALOG!
+          </button>
+        </section>
+      </div>
+    </dialog>
   </body>
 </html>

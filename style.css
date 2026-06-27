@@ -57,12 +57,14 @@ ul {
 }
 
 #top-nav a {
+  font-size: clamp(1.2rem, 1.2vw + 0.8rem, 1.4rem);
   text-decoration-thickness: 2px;
   text-decoration-color: var(--accent);
   color: var(--ink);
   padding: 10px;
   border-radius: 999px;
   transition: background-color 180ms ease, color 180ms ease;
+  text-transform: uppercase;
 }
 
 #top-nav a:hover {
@@ -76,6 +78,7 @@ figcaption {
 
 #top-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -110,15 +113,24 @@ strong {
 #hero-figure{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
+  width: min(100%, 32rem);
+  margin-inline: auto;
 }
 
 #hero-figure img{
-  height: 450px;
-  width: 450px;
+  width: min(100%, 28rem);
+  aspect-ratio: 1 / 1;
+  height: auto;
   object-fit: cover;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#hero-about{
+  width: 100%;
 }
 
 hgroup {
@@ -138,10 +150,12 @@ hgroup p {
 }
 
 #hero-section{
-  padding: 5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  width: min(100%, 72rem);
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
 }
 
@@ -189,6 +203,7 @@ footer small {
   align-items: center;
   gap: 2rem;
   padding: 4rem 1.5rem 5rem;
+  font-size: large;
 }
 
 .section-heading {
@@ -196,28 +211,22 @@ footer small {
   text-align: center;
 }
 
-.section-heading .eyebrow {
-  margin: 0 0 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.95rem;
-  color: var(--accent);
-}
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: xx-large;
 }
 
 .section-heading p {
   margin: 0.75rem 0 0;
-  font-size: 1.15rem;
+  font-size: larger;
   line-height: 1.6;
 }
 
 .skill-tree {
   width: min(1120px, 100%);
   position: relative;
+  font-size: larger;
 }
 
 .skill-tree::before {
@@ -346,6 +355,11 @@ footer small {
 
 #faq {
   padding: 4rem 1.5rem;
+  font-size: larger;
+}
+
+#faq summary {
+  font-size: x-large;
 }
 
 .faq-header {
@@ -361,7 +375,7 @@ footer small {
 
 .faq-header p {
   margin: 0.8rem 0 0;
-  font-size: 1.1rem;
+  font-size: larger;
   line-height: 1.55;
 }
 
@@ -415,16 +429,94 @@ footer small {
   line-height: 1.6;
 }
 
-@media screen and (min-width: 481px) {
-  #hero-section {
-  padding: 1.5rem;
-  flex-direction: column;
-  }
+dialog#my-dialog {
+  width: min(92vw, 44rem);
+  border: 1px solid rgba(35, 61, 77, 0.18);
+  border-radius: 28px;
+  padding: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, rgba(254, 127, 45, 0.16), transparent 30%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.98), rgba(234, 236, 240, 0.96));
+  box-shadow: 0 30px 80px rgba(13, 19, 33, 0.28);
+}
 
-  #hero-figure {
-  justify-content: center;
+dialog#my-dialog::backdrop {
+  background: rgba(13, 19, 33, 0.68);
+  backdrop-filter: blur(8px);
+}
+
+.dialog-shell {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.dialog-kicker {
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: larger;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.dialog-close {
+  flex-shrink: 0;
+}
+
+.dialog-summary {
+  margin: 0;
+  font-size: larger;
+  line-height: 1.65;
+}
+
+.dialog-details {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.dialog-details details {
+  padding: 1rem 1.05rem;
+  border-radius: 18px;
+  border: 1px solid rgba(35, 61, 77, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.dialog-details summary {
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  }
+  gap: 1rem;
+}
+
+.dialog-details summary::after {
+  content: "+";
+  display: inline-flex;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(35, 61, 77, 0.32);
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.dialog-details details[open] summary::after {
+  content: "-";
+}
+
+.dialog-details p {
+  font-size: larger;
+  margin: 0.85rem 0 0;
+  line-height: 1.6;
 }
 
 @media screen and (min-width: 769px) {
@@ -435,21 +527,8 @@ footer small {
 }
 
 @media screen and (min-width: 1000px) {
-  #hero-section {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  flex-direction: row;
-  }
-
   .skill-tree::before {
   inset: 120px 50% 24px;
-  }
-}
-
-@media screen and (min-width: 1240px) {
-  #hero-section {
-  padding-left: 15%;
-  padding-right: 15%;
   }
 }
 
@@ -474,13 +553,4 @@ footer small {
   justify-items: center;
   }
 
-  #hero-section {
-  padding: 1.5rem;
-  }
-
-  #hero-figure img {
-  width: min(100%, 420px);
-  height: auto;
-  aspect-ratio: 1 / 1;
-  }
 }
