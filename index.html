@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="copyright" content="j0nas-DEV">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="j0nas-DEV">
+    <meta name="copyright" content="j0nas-DEV" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="j0nas-DEV" />
     <title>j0nas-DEV Portfolio</title>
     <meta name="keywords" content="J0nas-DEV, J0nas-DEV portfolio" />
     <meta name="description" content="this is my portfolio." />
-    <meta property="og:type" content="portfolio">
-    <meta property="og:url" content="https://github.com/J0nas-DEV">
-    <meta property="og:title" content="j0nas-DEV | Portfolio">
-    <meta property="og:description" content="this is my portfolio.">
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:url" content="https://github.com/J0nas-DEV" />
+    <meta property="og:title" content="j0nas-DEV | Portfolio" />
+    <meta property="og:description" content="this is my portfolio." />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -235,7 +235,11 @@
               <i class="bi bi-type"></i>Readable/Pixel Font
             </button>
           </li>
-          <li><button type="button" onclick="setGrayscale()"><i class="bi bi-eye-fill"></i>Grayscale</button></li>
+          <li>
+            <button type="button" onclick="setGrayscale()">
+              <i class="bi bi-eye-fill"></i>Grayscale
+            </button>
+          </li>
         </ul>
       </details>
     </main>
@@ -341,7 +345,7 @@
 
     function setGrayscale() {
       switch (document.documentElement.style.getPropertyValue("filter")) {
-        case 'grayscale(100%)':
+        case "grayscale(100%)":
           document.documentElement.style.filter = "none";
           break;
         default:
