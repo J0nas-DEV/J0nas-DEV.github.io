@@ -181,6 +181,17 @@ footer {
 footer a{
   color: inherit;
   text-decoration: underline;
+}
+
+a:active {
+  text-decoration-color: var(--accent);
+}
+
+a:link {
+  text-decoration-color: #FFFF;
+}
+
+a:visited {
   text-decoration-color: var(--accent);
 }
 
