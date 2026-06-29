@@ -11,3 +11,5 @@
 
 this portfolio was written using web standards i use semantics html
 the goal for my website is to be accessible by anyone.
+
+i still considered myself a entry level.
