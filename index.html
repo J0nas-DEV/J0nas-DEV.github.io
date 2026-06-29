@@ -324,32 +324,30 @@
     </dialog>
   </body>
   <script>
+    const DOCUMENT_STYLE = document.documentElement.style;
+    const PIXEL_FONT = '"Pixelify Sans", sans-serif';
+    const ATKINSON_FONT = '"Atkinson Hyperlegible", sans-serif';
+    const F = "--font";
+    const G = "grayscale(100%)";
+
     function setFont() {
-      var font_existing =
-        document.documentElement.style.getPropertyValue("--font");
-      switch (font_existing) {
-        case '"Atkinson Hyperlegible", sans-serif':
-          document.documentElement.style.setProperty(
-            "--font",
-            '"Pixelify Sans", sans-serif',
-          );
+      switch (DOCUMENT_STYLE.getPropertyValue(F)) {
+        case ATKINSON_FONT:
+          DOCUMENT_STYLE.setProperty(F, PIXEL_FONT);
           break;
         default:
-          document.documentElement.style.setProperty(
-            "--font",
-            '"Atkinson Hyperlegible", sans-serif',
-          );
+          DOCUMENT_STYLE.setProperty(F, ATKINSON_FONT);
           break;
       }
     }
 
     function setGrayscale() {
-      switch (document.documentElement.style.getPropertyValue("filter")) {
-        case "grayscale(100%)":
-          document.documentElement.style.filter = "none";
+      switch (DOCUMENT_STYLE.getPropertyValue("filter")) {
+        case G:
+          DOCUMENT_STYLE.filter = "none";
           break;
         default:
-          document.documentElement.style.filter = "grayscale(100%)";
+          DOCUMENT_STYLE.filter = G;
           break;
       }
     }
