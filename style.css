@@ -190,7 +190,7 @@ footer address {
 footer ul {
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
@@ -521,13 +521,14 @@ dialog#my-dialog::backdrop {
 }
 
 #floating-button {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
+  position: sticky;
+  right: 0;
+  bottom: 0;
   z-index: 20;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   border: 0;
+  text-align: right;
 }
 
 #floating-button summary {
