@@ -184,6 +184,10 @@ footer a {
   text-decoration-color: var(--accent);
 }
 
+footer a:hover .arrow {
+  transform: translateX(20px);
+}
+
 footer address {
   font-style: normal;
 }
@@ -587,7 +591,7 @@ dialog#my-dialog::backdrop {
 }
 
 #floating-button summary:active {
-  background: var(--accent);
+  background-color: var(--accent);
   color: var(--paper);
 }
 
