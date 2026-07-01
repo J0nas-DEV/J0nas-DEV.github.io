@@ -58,7 +58,7 @@ ul {
 }
 
 #top-nav a {
-  font-size: clamp(1.2rem, 1.2vw + 0.8rem, 1.4rem);
+  font-size: clamp(0.9rem, 1.2vw + 0.6rem, 1.4rem);
   text-decoration-thickness: 2px;
   text-decoration-color: var(--accent);
   color: var(--ink);
@@ -102,7 +102,7 @@ figcaption {
 
 #top-nav ul{
   display: flex;
-  gap: 25px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
 }
