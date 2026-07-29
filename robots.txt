@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-
-Disallow: /cgi-bin/
-
-Sitemap: https://j0nas-dev.github.io/sitemap.xml
