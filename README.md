@@ -9,7 +9,6 @@
 <a href="mailto:jonasdalig@gmail.com" aria-label="Send me an email">Get in touch:
 <strong>jonasdalig@gmail.com</strong></a>
 
-this portfolio was written using web standards i use semantics html
-the goal for my website is to be accessible by anyone.
+This portfolio was built using modern web standards, with a strong focus on semantic HTML and accessibility. My goal is to create websites that are usable and accessible to as many people as possible, regardless of their abilities or how they access the web.
 
-i still considered myself a entry level.
+I still consider myself an entry-level developer, but I’m continuously learning and improving my skills. This portfolio represents my current knowledge, the projects I’ve worked on, and my commitment to building better and more accessible websites.
