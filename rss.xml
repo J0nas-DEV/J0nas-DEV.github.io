@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>j0nas-DEV Portfolio</title>
+    <link>https://j0nas-dev.github.io/</link>
+    <description>Updates, projects, and experiments from j0nas-DEV — a self-taught developer building accessible web experiences and software projects.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://j0nas-dev.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://j0nas-dev.github.io/og.jpg</url>
+      <title>j0nas-DEV Portfolio</title>
+      <link>https://j0nas-dev.github.io/</link>
+    </image>
+    <item>
+      <title>Portfolio updates and project work</title>
+      <link>https://j0nas-dev.github.io/</link>
+      <guid isPermaLink="true">https://j0nas-dev.github.io/</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Fresh portfolio updates, project highlights, and development notes from j0nas-DEV.</description>
+    </item>
+  </channel>
+</rss>
