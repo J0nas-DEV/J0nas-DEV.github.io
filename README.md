@@ -1,4 +1,4 @@
-# My Portfolio By j0nas-DEV
+# J0nas-DEV (Portfolio)
 
 <a href="https://github.com/J0nas-DEV"
               target="_blank"
